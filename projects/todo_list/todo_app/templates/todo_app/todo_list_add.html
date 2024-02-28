@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block content %}
+
+<style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .form-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .todo-list-form label {
+        font-weight: bold;
+    }
+    
+    .todo-list-form .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .button-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    .btn-secondary {
+        background-color: #6c757d;
+        color: #fff;
+    }
+    
+    .btn:hover {
+        opacity: 0.8;
+    }
+</style>
+
+<div class="container">
+    <h4>All my lists</h4>
+    <h3>{{ title }}</h3>
+    <div class="form-container">
+
+        <form method="post" class="todo-list-form">
+            {% csrf_token %}
+            <label for="title">Títle the list</label><br>
+            <input type="text" id="title" name="title" class="form-control" placeholder="Enter list title" required><br>
+            <div class="button-container">
+                <input type="submit" value="Guardar" class="btn btn-primary">
+                <a href="{% url 'index' %}" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
