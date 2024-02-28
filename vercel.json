@@ -1,10 +1,15 @@
 {
+    "version": 2,
     "builds": [{
         "src": "todo_project/wsgi.py",
         "use": "@vercel/python",
         "config": {
             "maxLambdaSize": "15mb",
-            "runtime": "python3.6"
+            "runtime": "python3.9",
+            "env": {
+                "PYTHON_VERSION": "3.6",
+                "SQLITE_VERSION": "3.7.17"
+            }
         }
     }],
     "routes": [{
