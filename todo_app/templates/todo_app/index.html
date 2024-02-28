@@ -7,9 +7,6 @@
     {% for todolist in object_list %}
     <li>
 
-
-
-
         <div class="list-item" onclick="location.href='{% url 'list' todolist.id %}'">
             {{ todolist.title }}
 
@@ -20,6 +17,6 @@
     {% endfor %}
 </ul>
 <p>
-    <input value="Add a new list" type="button" onclick="location.href='{% url 'list-add' %}'">
+    <input value="Add a new list" type="button" onclick="location.href='{% url 'todo_list_add' %}'">
 </p>
 {% endblock %}

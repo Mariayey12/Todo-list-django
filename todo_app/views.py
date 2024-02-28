@@ -8,12 +8,9 @@ from django.views.generic import (
     DeleteView,
 )
 from .models import ToDoItem, ToDoList
-
-
 class ListListView(ListView):
     model = ToDoList
     template_name = "todo_app/index.html"
-
 
 class ItemListView(ListView):
     model = ToDoItem
@@ -26,17 +23,16 @@ class ItemListView(ListView):
         context = super().get_context_data()
         context["todo_list"] = ToDoList.objects.get(id=self.kwargs["list_id"])
         return context
-
-
 class ListCreate(CreateView):
     model = ToDoList
     fields = ["title"]
+    template_name = 'todo_app/todo_list_add.html'  # Nombre de la plantilla HTML donde se mostrará el formulario
+    success_url = reverse_lazy('index')  # Reemplaza 'index' con el nombre de tu vista principal
 
-    def get_context_data(self):
-        context = super().get_context_data()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context["title"] = "Add a new list"
         return context
-
 
 class ItemCreate(CreateView):
     model = ToDoItem
