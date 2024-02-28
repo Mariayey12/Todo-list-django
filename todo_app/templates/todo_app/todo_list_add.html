@@ -66,8 +66,9 @@
             <input type="text" id="title" name="title" class="form-control" placeholder="Enter list title" required><br>
             <div class="button-container">
                 <input type="submit" value="Guardar" class="btn btn-primary">
-                <a href="{% url 'index' %}" class="btn btn-secondary">Cancelar</a>
+                <button onclick="location.href='{% url 'index' %}'" class="btn btn-secondary">Cancelar</button>
             </div>
+
         </form>
     </div>
 </div>

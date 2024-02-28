@@ -13,11 +13,9 @@
 
 <body>
     <div>
-        <a href="{% url 'index' %}">
-            <h1>Django To-do Lists</h1>
-        </a>
-
+        <h1 onclick="location.href='{% url 'index' %}'">Django To-do Lists</h1>
     </div>
+    {% block body %} {% endblock %}
 
 
     <div>
