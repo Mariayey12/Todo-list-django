@@ -72,21 +72,27 @@ sqlparse==0.4.4
 typing_extensions==4.1.1
 
 
-🚀 Pruebas con Selenium IDE y Despliegue en PythonAnywhere
+## 🚀 Pruebas con Selenium IDE y Despliegue en PythonAnywhere
 En este proyecto, se utilizó Selenium IDE para realizar pruebas automatizadas y se desplegó la aplicación en PythonAnywhere.
 
-📋 Pruebas con Selenium IDE
-Configuración
+## 📋 Pruebas con Selenium IDE
+![alt text](image-1.png)
+Para realizar pruebas, se utiliza Selenium IDE, una herramienta de automatización de pruebas que permite crear scripts de prueba interactivamente. 
+
+## Configuración
+
 Instala el complemento de Selenium IDE en tu navegador web preferido.
 Configura Selenium IDE para grabar tus acciones mientras navegas por la aplicación web.
 Ejecución de Pruebas
 Abre Selenium IDE y carga tu script de pruebas.
 Ejecuta el script y observa cómo Selenium IDE automatiza las acciones en la aplicación web.
 Analiza los resultados de las pruebas para asegurarte de que la aplicación funcione correctamente.
-Video Explicativo
-Puedes encontrar un video explicativo sobre cómo realizar pruebas con Selenium IDE aquí. El video cubre la configuración de Selenium IDE, la grabación de pruebas y la ejecución de pruebas automatizadas.
+## Video Explicativo
 
-🌐 Despliegue en PythonAnywhere
+Puedes encontrar un video explicativo sobre cómo realizar pruebas con Selenium IDE aquí. El video cubre la configuración de Selenium IDE, la grabación de pruebas y la ejecución de pruebas automatizadas.
+https://youtu.be/KskSQI5ZPVM?si=hAOB-Ba-q_3I6XLt
+
+## 🌐 Despliegue en PythonAnywhere
 https://www.pythonanywhere.com/user/Mayennifer25/webapps/#tab_id_mayennifer25_pythonanywhere_com
 ![alt text](image.png)
 
@@ -102,7 +108,7 @@ Copy code
 python manage.py runserver
 Accede a tu aplicación en línea ingresando la URL proporcionada por PythonAnywhere en tu navegador web.
 
-Observaciones
+## Observaciones
 Asegúrate de configurar correctamente la base de datos y otras configuraciones necesarias en PythonAnywhere para que tu aplicación funcione sin problemas en el entorno de producción.
 
 #  📝 Contribución
@@ -112,7 +118,9 @@ Este README proporciona una visión general de la aplicación, cómo ejecutarla,
 
 # Proyecto-Tarea-CRUD
 
-Proyecto realizado por parte  parte del autor
-👨‍💻 Autor :
-Maria Yennifer Martinez Cordero</
+Proyecto realizado por parte  parte del 
+## 👨‍💻 Autor a :
+
+  ## Maria Yennifer Martinez Cordero</
+ # @Mariayey12# 
 T.S.U.en Informatica,
