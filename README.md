@@ -1,6 +1,7 @@
 🚀 Aplicación de Lista de Tareas
 Esta es una aplicación web para gestionar listas de tareas y sus elementos asociados.
 
+ Link de acceso para que clones el proyecto :https://github.com/Mariayey12/Todo-list-django.git
 🛠️ Tecnologías Utilizadas
 Django: Framework web de Python para el desarrollo rápido de aplicaciones.
 Python: Lenguaje de programación utilizado para la lógica de backend.
